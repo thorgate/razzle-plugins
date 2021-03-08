@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "razzle-plugins-root",
+  "prettier": "@thorgate/prettier-config",
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "check-formatting": "prettier --check 'packages/**/src/**/*.{ts,tsx}'",
+    "show-formatting": "prettier 'packages/**/src/**/*.{ts,tsx}'",
+    "code-format": "prettier --write 'packages/**/src/**/*.{ts,tsx}'",
+    "lint": "yarn check-formatting && lerna --ignore=example-razzle-app exec yarn lint",
+    "test": "yarn test:examples",
+    "test:examples": "lerna --scope example-* exec -- yarn test --coverage",
+    "run-publish": "lerna --ignore=examples/* publish",
+    "run-publish:git": "lerna --ignore=examples/* publish from-git",
+    "start-example": "cd examples/example-app && yarn dev",
+    "start-example:prod": "cd examples/example-app && yarn build && yarn start",
+    "clean": "lerna exec yarn clean && yarn clean-logs",
+    "clean-all": "yarn clean && yarn clean-deps",
+    "clean-deps": "rimraf packages/*/node_modules && rimraf yarn.lock && rimraf */**/yarn.lock && rimraf node_modules",
+    "clean-logs": "rimraf *.log && rimraf */**/*.log"
+  },
+  "devDependencies": {
+    "@thorgate/prettier-config": "1.0.1",
+    "check-engines": "^1.5.0",
+    "lerna": "3.22.1",
+    "prettier": "2.2.1",
+    "razzle": "^3.3.13",
+    "razzle-plugin-eslint": "^3.3.13",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
