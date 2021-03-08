@@ -7,7 +7,7 @@ This is combination of utility packages used at [Thorgate](https://thorgate.eu).
 
 ## Packages included:
 
-Some of the packages are used by [Thorgate project template (SPA variant)](https://gitlab.com/thorgate-public/django-project-template/tree/spa).
+Some of the packages are used by [Thorgate project template (SPA variant)](https://gitlab.com/thorgate-public/django-project-template).
 
 * [razzle-plugin-modify-eslint-loader-config](packages/razzle-plugin-modify-eslint-loader-config/README.md) - Long term caching plugin to separate vendor chunk and include runtime chunk.
 * [razzle-plugin-modify-eslint-loader-config](packages/razzle-plugin-modify-eslint-loader-config/README.md) - Modify eslint loader config
@@ -21,11 +21,6 @@ Install dependencies
 ```
 yarn install
 yarn bootstrap
-```
-
-Build the packages
-```
-yarn build
 ```
 
 Start the example app (based on Razzle, see [readme](examples/example-app/README.md))
