@@ -1,5 +1,4 @@
 [![Build Status][gh-actions-image]][gh-actions-url]
-[![NPM version][npm-image]][npm-url]
 
 
 # Thorgate's collection of [Razzle](https://razzlejs.org/) plugins
@@ -42,9 +41,6 @@ Please check the [contributing guidelines](CONTRIBUTING.md) if you proceed with 
 
 MIT © [Thorgate](http://github.com/thorgate)
 
-
-[npm-url]: https://npmjs.org/package/tg-razzle-plugins
-[npm-image]: https://img.shields.io/npm/v/tg-razzle-plugins.svg?style=flat-square
 
 [gh-actions-url]: https://github.com/thorgate/razzle-plugins/actions/workflows/main.yml
 [gh-actions-image]: https://github.com/thorgate/razzle-plugins/actions/workflows/main.yml/badge.svg?branch=master
