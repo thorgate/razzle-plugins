@@ -9,7 +9,7 @@ This is combination of utility packages used at [Thorgate](https://thorgate.eu).
 
 Some of the packages are used by [Thorgate project template (SPA variant)](https://gitlab.com/thorgate-public/django-project-template).
 
-* [razzle-plugin-modify-eslint-loader-config](packages/razzle-plugin-modify-eslint-loader-config/README.md) - Long term caching plugin to separate vendor chunk and include runtime chunk.
+* [razzle-plugin-long-term-caching](packages/razzle-plugin-long-term-caching/README.md) - Configure long-term caching for bundled assets.
 * [razzle-plugin-modify-eslint-loader-config](packages/razzle-plugin-modify-eslint-loader-config/README.md) - Modify eslint loader config
 
 
